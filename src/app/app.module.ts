@@ -2,21 +2,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { TagsComponent } from './tags/tags.component';
 import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
 import { ArticlesComponent } from './articles/articles.component';
+import { TagsComponent } from './tags/tags.component';
+import { FooterComponent } from './footer/footer.component';
+
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    TagsComponent,
     HeaderComponent,
-    FooterComponent,
-    ArticlesComponent
+    ArticlesComponent,
+    TagsComponent,
+    FooterComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
